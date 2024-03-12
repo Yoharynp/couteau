@@ -22,7 +22,7 @@ class _PaginaLogoScreenState extends State<PaginaLogoScreen> {
 
   Future<void> _fetchNews() async {
     try {
-      final response = await _dio.get('https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=MM43446IMP43KARK');
+      final response = await _dio.get('https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=apikey');
       if (response.statusCode == 200) {
         final jsonData = response.data;
         const logoUrl = 'https://cdn-images-1.medium.com/v2/resize:fit:1200/1*hDp55PjhtL_RB3n5D0PwBw.jpeg';

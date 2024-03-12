@@ -20,7 +20,7 @@ class _MostrarClimaScreenState extends State<MostrarClimaScreen> {
   }
 
   Future<void> _obtenerClima() async {
-    const String apiKey = 'd0a0243aa9c4f0dddb5a38ded409cd1e';
+    const String apiKey = 'apikey';
     const String cityId = '3508796'; // ID de República Dominicana
     const String apiUrl =
         'https://api.openweathermap.org/data/2.5/weather?id=$cityId&appid=$apiKey&units=metric';
